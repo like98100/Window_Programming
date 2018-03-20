@@ -1,0 +1,7 @@
+﻿  source.cpp
+source.cpp(67): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  코드를 생성하고 있습니다.
+  All 17 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  0320_inheritance.vcxproj -> C:\Users\B409_17\Desktop\Window_Programming\0320_inheritance\Release\0320_inheritance.exe
+  0320_inheritance.vcxproj -> C:\Users\B409_17\Desktop\Window_Programming\0320_inheritance\Release\0320_inheritance.pdb (Full PDB)

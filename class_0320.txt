@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+class Shape {
+public:
+	float _x, _y;
+
+	Shape(float inx, float iny);
+	void Draw() const;
+
+};
+
+Shape::Shape(float inx, float iny) {
+	_x = inx;
+	_y = iny;
+}
+
+void Shape::Draw() const {
+	cout << "[Shape] Position :: (" << _x << ", " << _y << ")" << endl;
+}
+
+class Rectangle:public Shape {
+public:
+	float _width, _height;
+
+	Rectangle(float inx, float iny, float inwidth, float inheight);
+	void Draw() const;
+};
+
+Rectangle::Rectangle(float inx, float iny, float inwidth, float inheight):Shape(inx, iny) {
+	_x = inx; _y = iny;
+	_width = inwidth; _height = inheight;
+}
+
+void Rectangle::Draw() const{
+	cout << "[Rectangle] Position :: (" << _x << ", " << _y << "), size :: (" << _width << ", " << _height << ")" << endl;
+}
+
+class Circle:public Shape {
+public:
+	float _radius;
+
+	Circle(float inx, float iny, float inradius);
+	void Draw() const;
+};
+
+Circle::Circle(float inx, float iny, float inradius):Shape(inx, iny) {
+	_x = inx; _y = iny;
+	_radius = inradius;
+}
+
+void Circle::Draw() const{
+	cout << "[Circle] Position :: (" << _x << ", " << _y << "), radius :: (" << _radius << ")" << endl;
+}
+
+int main()
+{
+	Shape sha(100, 40);
+	sha.Draw();
+
+	Rectangle rec(120, 40, 50, 20);
+	rec.Draw();
+
+	Circle cir(200, 100, 50);
+	cir.Draw();
+	return 0;
+}
