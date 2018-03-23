@@ -46,7 +46,6 @@ CMyTime::CMyTime(int h, int m, int s) {
 			h += m / 60;
 			m %= 60;
 		}
-
 	
 	hour = h;
 	minute = m;
@@ -57,6 +56,16 @@ void CMyTime::add(CMyTime p) {
 	hour += p.hour;
 	minute += p.minute;
 	second += p.second;
+
+	if (second >= 60) {
+		minute += second / 60;
+		second %= 60;
+	}
+
+	if (minute >= 60) {
+		hour += minute / 60;
+		minute %= 60;
+	}
 }
 
 void CMyTime::print() {
