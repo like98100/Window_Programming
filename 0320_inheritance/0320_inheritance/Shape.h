@@ -3,7 +3,7 @@
 using namespace std;
 class Shape {
 public:
-	float _x, _y;
+	float _x = 0, _y = 0;
 
 	Shape(float inx, float iny);
 	virtual void Draw() const;

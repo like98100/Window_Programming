@@ -6,7 +6,7 @@ using namespace std;
 
 class Circle :public Shape {
 public:
-	float _radius;
+	float _radius = 0;
 
 	Circle(float inx, float iny, float inradius);
 	void Draw() const;

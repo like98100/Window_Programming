@@ -6,7 +6,7 @@ using namespace std;
 
 class Rectangle :public Shape {
 public:
-	float _width, _height;
+	float _width = 0, _height = 0;
 
 	Rectangle(float inx, float iny, float inwidth, float inheight);
 	void Draw() const;

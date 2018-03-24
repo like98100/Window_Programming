@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\dhaltnr\desktop\like\홍익세종\2학년\1학기\win_programming\window_programming\0321_homework\0321_homework\second_point.h(30): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\dhaltnr\desktop\like\홍익세종\2학년\1학기\win_programming\window_programming\0321_homework\0321_homework\second_point.h(31): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  0321_homework.vcxproj -> C:\Users\dhaltnr\Desktop\like\홍익세종\2학년\1학기\win_programming\Window_Programming\0321_homework\Debug\0321_homework.exe
+  0321_homework.vcxproj -> C:\Users\dhaltnr\Desktop\like\홍익세종\2학년\1학기\win_programming\Window_Programming\0321_homework\Debug\0321_homework.pdb (Full PDB)
