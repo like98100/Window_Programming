@@ -70,7 +70,11 @@ void CMyTime::add(CMyTime p) {
 
 void CMyTime::print() {
 	cout.width(2); cout.fill('0');
-	cout << hour << ":" <<  minute << ":" << second << endl;
+	cout << hour << ":";
+	cout.width(2); cout.fill('0');
+	cout << minute << ":";
+	cout.width(2); cout.fill('0');
+	cout << second << endl;
 }
 int main() {
 
